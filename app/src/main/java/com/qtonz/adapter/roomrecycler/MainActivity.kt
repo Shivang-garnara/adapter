@@ -2,7 +2,6 @@ package com.qtonz.adapter.roomrecycler
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -61,9 +60,6 @@ class MainActivity : AppCompatActivity() {
             val number = binding.edNumber.text.toString().trim()
             val firstName = binding.edFirst.text.toString().trim()
             val email = binding.edEmail.text.toString().trim()
-
-            Log.e("valuetest", "$number, $email, $firstName")
-
             if (number.isNotEmpty()) {
                 if (firstName.isEmpty()) {
                     Toast.makeText(
@@ -112,6 +108,7 @@ class MainActivity : AppCompatActivity() {
                     getString(R.string.data_saved_successfully),
                     Toast.LENGTH_LONG
                 ).show()
+                clearFields()
             }
         }
     }
@@ -131,7 +128,8 @@ class MainActivity : AppCompatActivity() {
                 userList[index] = it
                 userAdapter.notifyItemChanged(index)
 
-                Toast.makeText(this@MainActivity, "User updated successfully", Toast.LENGTH_LONG)
+                Toast.makeText(this@MainActivity,
+                    getString(R.string.user_updated_successfully), Toast.LENGTH_LONG)
                     .show()
                 clearFields()
             }

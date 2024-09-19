@@ -70,4 +70,5 @@
     <string name="please_enter_number">please Enter Number</string>
     <string name="data_saved_successfully">Data saved successfully</string>
     <string name="this_number_already_exists">This number already exists</string>
+    <string name="user_updated_successfully">User updated successfully</string>
 </resources>

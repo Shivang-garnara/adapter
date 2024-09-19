@@ -17,13 +17,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:maxLength="10"
-            android:digits="0123456789"
             android:id="@+id/edNumber"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/number" />
+            android:digits="0123456789"
+            android:hint="@string/number"
+            android:maxLength="10" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
