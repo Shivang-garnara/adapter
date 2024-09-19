@@ -1,5 +1,6 @@
 package com.qtonz.adapter
 
+import com.qtonz.adapter.roomrecycler.MainActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -11,7 +12,6 @@ import com.qtonz.adapter.animated.flowerList.FlowersListActivity
 import com.qtonz.adapter.nestedrecyclerview.activity.NestedRecyclerActivity
 import com.qtonz.adapter.practice.activity.PracticeActivity
 import com.qtonz.adapter.recycle.activity.BasicRecycleViewActivity
-import com.qtonz.adapter.roomrecycler.MainActivity
 
 class MainAppActivity : AppCompatActivity(), View.OnClickListener {
     private val binding:ActivityMainAppBinding by lazy {

@@ -65,4 +65,9 @@
     <string name="first_name">First Name</string>
     <string name="number_item">Number</string>
     <string name="email_item">Email</string>
+    <string name="please_enter_first_name">please Enter First Name</string>
+    <string name="please_enter_email">please Enter Email</string>
+    <string name="please_enter_number">please Enter Number</string>
+    <string name="data_saved_successfully">Data saved successfully</string>
+    <string name="this_number_already_exists">This number already exists</string>
 </resources>

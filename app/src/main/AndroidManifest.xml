@@ -42,7 +42,7 @@
         <activity
             android:name=".animated.flowerList.FlowersListActivity"
             android:exported="true" />
-        <activity android:name=".addFlower.AddFlowerActivity" />
+<!--        <activity android:name=".addFlower.AddFlowerActivity" />-->
         <activity android:name=".animated.flowerDetail.FlowerDetailActivity" />
     </application>
 
