@@ -4,12 +4,10 @@ import android.content.res.Resources
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 
-/* Handles operations on flowersLiveData and holds details about it. */
 class DataSource(resources: Resources) {
     private val initialFlowerList = flowerList(resources)
     private val flowersLiveData = MutableLiveData(initialFlowerList)
 
-    /* Adds flower to liveData and posts value. */
     fun addFlower(flower: Flower) {
         val currentList = flowersLiveData.value
         if (currentList == null) {
@@ -21,7 +19,6 @@ class DataSource(resources: Resources) {
         }
     }
 
-    /* Removes flower from liveData and posts value. */
     fun removeFlower(flower: Flower) {
         val currentList = flowersLiveData.value
         if (currentList != null) {
@@ -31,7 +28,6 @@ class DataSource(resources: Resources) {
         }
     }
 
-    /* Returns flower given an ID. */
     fun getFlowerForId(id: Long): Flower? {
         flowersLiveData.value?.let { flowers ->
             return flowers.firstOrNull{ it.id == id}
@@ -43,7 +39,6 @@ class DataSource(resources: Resources) {
         return flowersLiveData
     }
 
-    /* Returns a random flower asset for flowers that are added. */
     fun getRandomFlowerImageAsset(): Int? {
         val randomNumber = (initialFlowerList.indices).random()
         return initialFlowerList[randomNumber].image

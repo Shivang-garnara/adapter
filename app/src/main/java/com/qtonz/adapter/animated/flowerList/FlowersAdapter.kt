@@ -28,7 +28,6 @@ class FlowersAdapter(private val onClick: (Flower) -> Unit) :
             }
         }
 
-        /* Bind flower name and image. */
         fun bind(flower: Flower) {
             currentFlower = flower
 
@@ -41,14 +40,12 @@ class FlowersAdapter(private val onClick: (Flower) -> Unit) :
         }
     }
 
-    /* Creates and inflates view and return FlowerViewHolder. */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FlowerViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.flower_item, parent, false)
         return FlowerViewHolder(view, onClick)
     }
 
-    /* Gets current flower and uses it to bind view. */
     override fun onBindViewHolder(holder: FlowerViewHolder, position: Int) {
         val flower = getItem(position)
         holder.bind(flower)

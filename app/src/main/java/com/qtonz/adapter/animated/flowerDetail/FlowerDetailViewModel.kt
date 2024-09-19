@@ -8,12 +8,10 @@ import com.qtonz.adapter.animated.data.Flower
 
 class FlowerDetailViewModel(private val datasource: DataSource) : ViewModel() {
 
-    /* Queries datasource to returns a flower that corresponds to an id. */
     fun getFlowerForId(id: Long) : Flower? {
         return datasource.getFlowerForId(id)
     }
 
-    /* Queries datasource to remove a flower. */
     fun removeFlower(flower: Flower) {
         datasource.removeFlower(flower)
     }

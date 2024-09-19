@@ -42,8 +42,8 @@ class PracticeAdapter(private val mList: List<itemsPractice>) :
         val rating: TextView = itemView.findViewById(R.id.tvRate)
         val la: TextView = itemView.findViewById(R.id.tvLanguage)
         val time: TextView = itemView.findViewById(R.id.tvMovieTime)
-                fun log(){
-                    Log.d("test", "$movie, $moviename")
-                }
+        fun log() {
+            Log.d("test", "$movie, $moviename")
+        }
     }
 }

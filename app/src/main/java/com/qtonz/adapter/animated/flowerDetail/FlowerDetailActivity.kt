@@ -23,7 +23,6 @@ class FlowerDetailActivity : AppCompatActivity() {
 
         var currentFlowerId: Long? = null
 
-        /* Connect variables to UI elements. */
         val flowerName: TextView = findViewById(R.id.flower_detail_name)
         val flowerImage: ImageView = findViewById(R.id.flower_detail_image)
         val flowerDescription: TextView = findViewById(R.id.flower_detail_description)
@@ -34,8 +33,6 @@ class FlowerDetailActivity : AppCompatActivity() {
             currentFlowerId = bundle.getLong(FLOWER_ID)
         }
 
-        /* If currentFlowerId is not null, get corresponding flower and set name, image and
-        description */
         currentFlowerId?.let {
             val currentFlower = flowerDetailViewModel.getFlowerForId(it)
             flowerName.text = currentFlower?.name

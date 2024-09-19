@@ -57,4 +57,12 @@
     <string name="advance_recycleview">advance RecycleView</string>
     <string name="title">Title</string>
     <string name="nested_recycleview">nested RecycleView</string>
+    <string name="room_recyle">room recycler</string>
+    <string name="firstname">FIRSTNAME</string>
+    <string name="number">NUMBER</string>
+    <string name="email">EMAIL</string>
+    <string name="save">save</string>
+    <string name="first_name">First Name</string>
+    <string name="number_item">Number</string>
+    <string name="email_item">Email</string>
 </resources>

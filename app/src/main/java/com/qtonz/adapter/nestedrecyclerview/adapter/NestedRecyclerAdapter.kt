@@ -38,7 +38,11 @@ class NestedRecyclerAdapter(private val mList: List<Items>) :
                 notifyItemChanged(position)
             }
             binding.conTiltle.setOnLongClickListener {
-                Toast.makeText(binding.root.context, "Long clicked on item: ${mList.text}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    binding.root.context,
+                    "Long clicked on item: ${mList.text}",
+                    Toast.LENGTH_SHORT
+                ).show()
                 true
             }
         }

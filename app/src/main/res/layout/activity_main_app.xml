@@ -36,4 +36,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/animated_adapter"/>
+    <Button
+        android:id="@+id/btnroomrecyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/room_recyle"/>
 </LinearLayout>

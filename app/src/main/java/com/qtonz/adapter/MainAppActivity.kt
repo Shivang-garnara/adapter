@@ -11,6 +11,7 @@ import com.qtonz.adapter.animated.flowerList.FlowersListActivity
 import com.qtonz.adapter.nestedrecyclerview.activity.NestedRecyclerActivity
 import com.qtonz.adapter.practice.activity.PracticeActivity
 import com.qtonz.adapter.recycle.activity.BasicRecycleViewActivity
+import com.qtonz.adapter.roomrecycler.MainActivity
 
 class MainAppActivity : AppCompatActivity(), View.OnClickListener {
     private val binding:ActivityMainAppBinding by lazy {
@@ -29,6 +30,7 @@ class MainAppActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnadvanceRecycleView.setOnClickListener(this)
         binding.btnAnimatedAdapter.setOnClickListener(this)
         binding.btnnestedRecycleView.setOnClickListener(this)
+        binding.btnroomrecyle.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
@@ -50,6 +52,9 @@ class MainAppActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btnAnimatedAdapter ->{
                 startActivity(Intent(this@MainAppActivity, FlowersListActivity::class.java))
+            }
+            R.id.btnroomrecyle ->{
+                startActivity(Intent(this@MainAppActivity, MainActivity::class.java))
             }
         }
     }
